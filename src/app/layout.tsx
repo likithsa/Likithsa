@@ -47,13 +47,38 @@ export const viewport: Viewport = {
 };
 
 export const metadata: Metadata = {
-  title: 'Likith S A | Portfolio',
-  description: 'Futuristic portfolio — AI, Full-Stack Engineering & Automation',
-  keywords: 'Likith, portfolio, software engineer, AI, full-stack, futuristic',
+  metadataBase: new URL('https://likithsa.vercel.app'),
+  title: {
+    default: 'Likith S A | likithsa | Portfolio',
+    template: '%s | Likith S A',
+  },
+  description: 'Likith S A (likithsa) - Futuristic Software Engineer specializing in AI, Full-Stack Development, and Automation. Explore my portfolio and projects.',
+  keywords: ['Likith S A', 'likithsa', 'Likith', 'Software Engineer', 'Portfolio', 'AI Engineer', 'Full-Stack Developer', 'Next.js Portfolio'],
+  authors: [{ name: 'Likith S A' }],
+  creator: 'Likith S A',
   openGraph: {
-    title: 'Likith S A | Portfolio',
-    description: 'Futuristic portfolio — AI, Full-Stack Engineering & Automation',
     type: 'website',
+    locale: 'en_US',
+    url: 'https://likithsa.vercel.app',
+    title: 'Likith S A | likithsa | Portfolio',
+    description: 'Futuristic Portfolio of Likith S A (likithsa). Exploring the intersection of AI and Software Engineering.',
+    siteName: 'Likith S A Portfolio',
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Likith S A | likithsa | Portfolio',
+    description: 'Futuristic Portfolio of Likith S A (likithsa). Exploring the intersection of AI and Software Engineering.',
+  },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      'max-video-preview': -1,
+      'max-image-preview': 'large',
+      'max-snippet': -1,
+    },
   },
 };
 
